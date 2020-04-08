@@ -1,3 +1,5 @@
+package Client;
+
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -31,7 +33,7 @@ public class Client {
                 System.out.println(serverMsg);
 
             } catch (Exception e) {
-                System.out.println("Client error readUTF()");
+                System.out.println("Client.Client error readUTF()");
             }
         }
     }
