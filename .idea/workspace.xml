@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="comp90015-a1:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8118fb79-f3b9-4333-8cae-41e3d2854ca4" name="Default Changelist" comment="finish a compilable multiclient multithreaded server using thread pool architecture.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Dict.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/JSONReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/ServerRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/DictionaryApp.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/DictionaryApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/comp90015_a1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/comp90015_a1_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Dict.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Dict.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/JSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/JSONReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server$ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/ServerRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/ServerRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +45,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="162" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="270" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -69,27 +74,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client.Client" />
+  <component name="RunManager" selected="Application.DictionaryApp">
+    <configuration name="Client2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="comp90015-a1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.Server" />
-      <module name="comp90015-a1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.ServerRunner" />
+    <configuration name="DictionaryApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.DictionaryApp" />
       <module name="comp90015-a1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Server.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,9 +95,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <module name="comp90015-a1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.ServerRunner" />
+      <module name="comp90015-a1" />
+      <option name="PROGRAM_PARAMETERS" value="./dict.json" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Client2" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.ServerRunner" />
+      <item itemvalue="Application.DictionaryApp" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.DictionaryApp" />
         <item itemvalue="Application.ServerRunner" />
         <item itemvalue="Application.Server" />
       </list>
@@ -116,7 +141,10 @@
       <option name="presentableId" value="Default" />
       <updated>1586084494324</updated>
       <workItem from="1586084499707" duration="6187000" />
-      <workItem from="1586140035170" duration="31440000" />
+      <workItem from="1586140035170" duration="32061000" />
+      <workItem from="1586354696193" duration="703000" />
+      <workItem from="1586395474862" duration="3943000" />
+      <workItem from="1586401944657" duration="15587000" />
     </task>
     <servers />
   </component>
@@ -128,7 +156,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

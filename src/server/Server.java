@@ -75,8 +75,8 @@ public class Server implements Runnable {
 
         @Override
         public void run() {
-            try {
-                while (true) {
+            while (true) {
+                try {
                     // set up input output data streams
                     OutputStream outputStream = socket.getOutputStream();
                     DataOutputStream dataOutputStream = new DataOutputStream(outputStream);
@@ -95,10 +95,12 @@ public class Server implements Runnable {
                     // send message to the client
                     //String meaning = "HI there client, I like it when you say:" + clientMsg;
                     dataOutputStream.writeUTF(response);
+                } catch(IOException e) {
+                    // one of the clients has disconnected, do nothing
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
+
             }
+
         }
     }
 
