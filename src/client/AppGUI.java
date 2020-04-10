@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AppGUI {
     private JTextField textField1;
@@ -27,17 +29,69 @@ public class AppGUI {
             public void actionPerformed(ActionEvent e) {
                 String word = textField1.getText();
                 String meaning = textField2.getText();
+                if ( !(inputValid(word)&&inputValid(meaning)) ) {
+                    textField3.setText("word, meaning must only contain letters or ',' or '.'");
+                    return;
+                }
                 String msg = "add*" + word + "*" + meaning;
                 try {
                     client.sendMsg(msg);
                     String response = client.listenForResponse();
                     textField3.setText(response);
-
                 } catch (IOException ex) {
                     // server internal error
+                    textField3.setText("Oops, sever error...");
                 }
             }
         });
+
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String word = textField1.getText();
+                if ( !(inputValid(word)) ) {
+                    textField3.setText("word must only contain letters or ',' or '.'");
+                    return;
+                }
+                String msg = "search*" + word;
+                try {
+                    client.sendMsg(msg);
+                    String response = client.listenForResponse();
+                    textField3.setText(response);
+                } catch (IOException ex) {
+                    // server internal error
+                    textField3.setText("Oops, sever error...");
+                }
+            }
+        });
+
+        removeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String word = textField1.getText();
+                String meaning = textField2.getText();
+                if ( !(inputValid(word)&&inputValid(meaning)) ) {
+                    textField3.setText("word must only contain letters or ',' or '.'");
+                    return;
+                }
+                String msg = "remove*" + word;
+                try {
+                    client.sendMsg(msg);
+                    String response = client.listenForResponse();
+                    textField3.setText(response);
+                } catch (IOException ex) {
+                    // server internal error
+                    textField3.setText("Oops, sever error...");
+                }
+            }
+        });
+    }
+
+    private boolean inputValid(String input) {
+        String regex = "[a-zA-z\\s,\\.]+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+        return matcher.matches();
     }
 
     public static void main(String[] args) {

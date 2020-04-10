@@ -54,6 +54,8 @@
         </constraints>
         <properties>
           <font size="24"/>
+          <foreground color="-14577989"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="59749" class="javax.swing.JLabel">
@@ -62,6 +64,7 @@
         </constraints>
         <properties>
           <font size="24"/>
+          <foreground color="-14577989"/>
           <text value="Results:"/>
         </properties>
       </component>
