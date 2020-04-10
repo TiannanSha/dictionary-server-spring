@@ -1,42 +1,40 @@
 package client;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class DictionaryApp {
+public class AppGUI {
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JButton removeButton;
+    private JButton addButton;
+    private JButton searchButton;
     private JPanel panel1;
-    private JButton searchAWordInButton;
-    private JButton removeAWordFromButton;
-    private JButton addAWordToButton;
-    private JTextArea textArea1;
-    private JTextArea textArea2;
-    private JTextPane resultTextPane;
     private Client client;
 
-    public DictionaryApp() {
+    public AppGUI() {
         try {
             client = new Client(9000, InetAddress.getLocalHost());
         } catch (UnknownHostException e) { e.printStackTrace(); }
 
-        addAWordToButton.addActionListener(new ActionListener() {
+        addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String word = textArea1.getText();
-                String meaning = textArea2.getText();
+                String word = textField1.getText();
+                String meaning = textField2.getText();
                 String msg = "add*" + word + "*" + meaning;
                 try {
                     client.sendMsg(msg);
                     String response = client.listenForResponse();
-                    resultTextPane.setText(response);
+                    textField3.setText(response);
 
                 } catch (IOException ex) {
                     // server internal error
-
                 }
             }
         });
@@ -48,13 +46,14 @@ public class DictionaryApp {
 
         JFrame frame = new JFrame("Dictionary App");
         // set this frame's JPanel to be the JPanel in the form
-        frame.setContentPane(new DictionaryApp().panel1);
-        frame.pack(); // make all components reach the size set in the form
+        frame.setContentPane(new AppGUI().panel1);
+        frame.setSize(800, 480); // make all components reach the size set in the form
         frame.setLocationRelativeTo(null); // make the frame appear at the centre of the screen
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-
     }
 
+
 }
+
+

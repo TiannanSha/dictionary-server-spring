@@ -38,7 +38,7 @@ public class Server implements Runnable {
     }
 
     private String handleClientMsg(String msg) {
-        String[] clientMsgWords = msg.split(" ");
+        String[] clientMsgWords = msg.split("\\*");
         //System.out.println(Arrays.toString(clientMsgWords));
         String command = clientMsgWords[0];
         if (command.equals("add")) {
