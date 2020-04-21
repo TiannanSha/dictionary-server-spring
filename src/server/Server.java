@@ -1,3 +1,9 @@
+/**
+ * @auther Tiannan Sha 861696
+ * This class implements a multithreaded dictionary server that handles client requests using
+ * the thread pool architecture.
+ */
+
 package server;
 
 import java.io.*;
@@ -60,13 +66,13 @@ public class Server implements Runnable {
             }
             String word = clientMsgWords[1];
             return dict.removeWord(word);
+        } else if (command.equals("showEntries")) {
+            return dict.toString();
         } else {
             return "ERROR: unknown command received";
         }
-
     }
 
-    //https://stackoverflow.com/questions/443499/convert-json-to-map
     private class ClientHandler implements Runnable {
         Socket socket;
         ClientHandler(Socket socket) {
@@ -93,7 +99,6 @@ public class Server implements Runnable {
                     String response = handleClientMsg(clientMsg);
 
                     // send message to the client
-                    //String meaning = "HI there client, I like it when you say:" + clientMsg;
                     dataOutputStream.writeUTF(response);
                 } catch(IOException e) {
                     // one of the clients has disconnected, do nothing
