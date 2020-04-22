@@ -1,3 +1,8 @@
+/**
+ * @auther Tiannan Sha 861696
+ * This class implements the GUI as well as the main function of the client side
+ */
+
 package client;
 
 import javax.swing.*;
@@ -28,7 +33,7 @@ public class AppGUI {
                 String word = textField1.getText();
                 String meaning = textField2.getText();
                 if ( !(inputValid(word)&&inputValid(meaning)) ) {
-                    textField3.setText("word, meaning must only contain letters, space, ',' or '.'");
+                    textField3.setText("word,meaning must be non-empty and only contain letters,space, ',' or '.'");
                     return;
                 }
                 String msg = "add*" + word + "*" + meaning;
@@ -48,7 +53,7 @@ public class AppGUI {
             public void actionPerformed(ActionEvent e) {
                 String word = textField1.getText();
                 if ( !(inputValid(word)) ) {
-                    textField3.setText("word must only contain letters, space ',' or '.'");
+                    textField3.setText("word must be non-empty and only contain letters, space ',' or '.'");
                     return;
                 }
                 String msg = "search*" + word;
@@ -68,8 +73,8 @@ public class AppGUI {
             public void actionPerformed(ActionEvent e) {
                 String word = textField1.getText();
                 String meaning = textField2.getText();
-                if ( !(inputValid(word)&&inputValid(meaning)) ) {
-                    textField3.setText("word must only contain letters, space, ',' or '.'");
+                if ( !inputValid(word) ) {
+                    textField3.setText("word must be non-empty and only contain letters, space, ',' or '.'");
                     return;
                 }
                 String msg = "remove*" + word;
@@ -106,6 +111,11 @@ public class AppGUI {
     }
 
     public static void main(String[] args) {
+        if (args.length!=2) {
+            System.out.println("ERROR: argument format not correct");
+            System.out.println("USAGE: java -jar DictionaryClient.jar <server-address> <server-port>");
+            return;
+        }
         // read server address and port
         int port;
         InetAddress address;
@@ -114,14 +124,14 @@ public class AppGUI {
             address = InetAddress.getByName(args[0]);
         } catch (Exception e) {
             System.out.println("ERROR: invalid host address or port number");
-            System.out.println("USAGE: java –jar DictionaryClient.jar <server-address> <server-port>");
+            System.out.println("USAGE: java -jar DictionaryClient.jar <server-address> <server-port>");
             return;
         }
 
         JFrame frame = new JFrame("Dictionary App");
         // set this frame's JPanel to be the JPanel in the form
         frame.setContentPane(new AppGUI(port, address).panel1);
-        frame.setSize(800, 480); // make all components reach the size set in the form
+        frame.setSize(1000, 600); // make all components reach the size set in the form
         frame.setLocationRelativeTo(null); // make the frame appear at the centre of the screen
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

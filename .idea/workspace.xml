@@ -7,31 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8118fb79-f3b9-4333-8cae-41e3d2854ca4" name="Default Changelist" comment="finish a compilable multiclient multithreaded server using thread pool architecture.">
-      <change afterPath="$PROJECT_DIR$/src/server/dictFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DictionaryServer_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/comp90015-a1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/dictFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/comp90015_a1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/DictionaryClient_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comp90015-a1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/comp90015-a1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp90015-a1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/comp90015-a1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp90015-a1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Client/AppGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/DictionaryApp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/DictionaryApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Dict.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Dict.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/JSONReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server$ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/META-INF/comp90015-a1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/ServerRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/Server/ServerRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/dict" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/AppGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/AppGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/Server/dictFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/comp90015-a1/client/AppGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/comp90015-a1/client/AppGUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/AppGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/DictionaryApp.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/DictionaryApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Dict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Dict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/JSONReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/dict" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/dictFile" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -92,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AppGUI">
+  <component name="RunManager" selected="Application.ServerRunner">
     <configuration name="AppGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.AppGUI" />
       <module name="comp90015-a1" />
@@ -137,7 +134,7 @@
     <configuration name="ServerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.ServerRunner" />
       <module name="comp90015-a1" />
-      <option name="PROGRAM_PARAMETERS" value="./dict.json" />
+      <option name="PROGRAM_PARAMETERS" value="9000 src/server/dictFile.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="server.*" />
@@ -157,8 +154,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppGUI" />
         <item itemvalue="Application.ServerRunner" />
+        <item itemvalue="Application.AppGUI" />
         <item itemvalue="Application.DictionaryApp" />
         <item itemvalue="Application.Server" />
       </list>
@@ -183,7 +180,8 @@
       <workItem from="1586496563661" duration="5859000" />
       <workItem from="1586503176318" duration="8462000" />
       <workItem from="1586573821401" duration="10042000" />
-      <workItem from="1587454180463" duration="3742000" />
+      <workItem from="1587454180463" duration="16085000" />
+      <workItem from="1587516191269" duration="3159000" />
     </task>
     <servers />
   </component>
